@@ -1,0 +1,189 @@
+body{
+
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+	
+}
+
+.file-icon{
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.file-icon-type{
+	
+	color:white;
+	position: absolute;
+	
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sidebar-sticky{
+	top:70px;
+	position: sticky;
+	height: calc(100vh - 70px);
+
+}
+
+main{
+	padding:10px;
+	background-color:white;
+	height: calc(100vh - 70px);
+	
+}
+
+.card-image{
+	padding:5px !important;
+	display:flex;
+	justify-content:center;
+}
+
+footer{
+	background-color: #f8f9fa
+}
+
+/* Header */
+
+.reg-panel {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 40px;
+	
+}
+	
+.reg-panel a{
+	padding: 5px;
+	font-size:100%;
+	color:#28a745!important;
+}
+
+/* Pagination */
+
+
+/**/
+.no-found{
+	text-align: center;
+	padding: 50px 50px;
+}
+
+.fa-angrycreative {
+	padding-left: 20px;
+	font-size:60px;
+}
+
+
+/* Login */
+.content {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: fixed;
+	width:280px;
+}
+
+.log-title{
+	text-align: center;
+} 
+
+/* Article */
+.blog-post {
+	text-align: justify;
+}
+
+.btn-add{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.btn-add i {
+	color: white;
+}
+
+.tariff-name {
+    border-bottom: solid 2px blue;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 125%;
+}
+
+.card{
+	height: 200px;
+}
+
+#progressbar {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.tariff-header{
+	border-top: 2px solid #eee;
+	padding-top: 30px;
+	
+}
+
+.slider{
+	/*height: 100%;*/
+
+}
+
+.folder>i{
+	color: #ffdb4d;
+}
+
+.folder:hover{
+	text-decoration: none;
+}
+
+.folder span{
+	margin-left: 10px;
+	color: #343a40;
+	font-size: 100%;
+
+}
+
+.file-icon i{
+	color:#e1eaf3;
+}
+
+.file-icon small{
+	color:#343a40;
+}
+
+.file span{
+	margin-left: 10px;
+	color: #343a40;
+	font-size: 100%;
+}
+
+.hidden{
+	
+	display: none;
+}
+
+.sidebar-sticky a{
+	color: indigo;
+}
+
+.sidebar-sticky span{
+	font-size: 110%;
+}
+
+.prev a {
+	color: indigo;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Регистрация</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+
+
+
+<main role="main" class="container">
+
+	<div class="content">
+		<div class='log-title mb-3' th:if="${error}"> 
+			<h5 th:text="(${error}=='user_exist') ? 'Пользователь с таким email уже существует' : 'Данный логин уже занят'"></h5> 
+		</div>
+		<div class='log-title mb-3' th:if="${error}==null"> 
+			<h5>Регистрация</h5> 
+		</div>
+		
+		<form th:action="@{/registration}"  th:object="${newUser}" th:method="POST" class="form-signin">
+			<input type="text" class="form-control mb-3" name="name" th:field="*{name}" placeholder="Имя" required/>
+			<input type="text" class="form-control mb-3" name="login" th:field="*{login}" placeholder="Логин" required/>
+			<input type="text" class="form-control mb-3" name="login" th:field="*{email}" placeholder="Email" required/>
+			<input type="password" class="form-control mb-3" name="login" th:field="*{password}" placeholder="Пароль" required/>
+			<button type="submit" class="btn btn-lg btn-primary btn-block mb-3">Зарегистрироваться</button>
+		</form>
+		<div class="d-flex justify-content-center">
+			<a href="/login">Уже есть аккаунт</a>
+		</div>
+	</div>
+	
+</main>
+
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
